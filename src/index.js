@@ -38,7 +38,6 @@ async function onSearch(e) {
   }
 
   const response = await getImages(searchQuery, currentPage);
-  console.log('🚀 ~ onSearch ~ response:', response);
   currentHits = response.hits.length;
 
   if (response.totalHits > 40) {
